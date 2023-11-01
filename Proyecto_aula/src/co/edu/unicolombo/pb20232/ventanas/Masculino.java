@@ -417,51 +417,99 @@ private void agregarEquipo6() {
         agregarEquipo6();
     }//GEN-LAST:event_RegistrarMouseClicked
 private void sumarPartidoJugado() {
-        int filas = modelo.getRowCount();
+    
+    
+      //------------------------------------------------------------------------------------------------------------------------------
+        
+      // partidos jugados
+      
+      
+      
+      
+      
+      int filas = modelo.getRowCount();
         for (int i = 0; i < filas; i++) {
             int partidosJugados = (int) modelo.getValueAt(i, 4);
             modelo.setValueAt(partidosJugados + 1, i, 4);
-        }
+        }//Cuando se presiona jugar a los partidos jugados se les suma uno
       
        
+          //------------------------------------------------------------------------------------------------------------------------------
+          
+          
+          // partidos ganados y perdidos
+          
+          
+          
+          
+          
          int filas1 = modelo.getRowCount();
         for (int i = 0; i < filas1; i++) {
             double numeroaleatorio = random.nextDouble();
            if(numeroaleatorio < 0.5){
             int partidosGanados = (int) modelo.getValueAt(i, 5);
             modelo.setValueAt(partidosGanados+ 1, i, 5);
+           } else {
+                int partidosGanados = (int) modelo.getValueAt(i, 6);
+                modelo.setValueAt(partidosGanados+ 1, i, 6);
            }
-        }
+        }// Cuando se presiona jugar hay un 50% de probabilidad de que gane un partido
+        
+        //------------------------------------------------------------------------------------------------------------------------------
+        
+       
+        
+        
+        
+        
+        
+        
+        
+        
+        //Sistema de puntos
+        
+        
           for (int i = 0; i < filas1; i++) {
             int partidosGanados = (int) modelo.getValueAt(0, 5);
-           if( partidosGanados == 1 || partidosGanados == 2 || partidosGanados == 3 || partidosGanados == 3 || partidosGanados == 4  ){
+           if( partidosGanados == 1 || partidosGanados == 2 || partidosGanados == 10 || partidosGanados == 3 || partidosGanados == 4 || partidosGanados == 5 || partidosGanados == 6 || partidosGanados == 7 || partidosGanados == 8 || partidosGanados == 9  ){
             modelo.setValueAt(partidosGanados + 3, 0, 7);// hago que le sume puntos a la columna de puntos
            }
         }
            for (int i = 0; i < filas1; i++) {
             int partidosGanados = (int) modelo.getValueAt(1, 5);
-           if( partidosGanados == 1 || partidosGanados == 2 || partidosGanados == 3 || partidosGanados == 3 || partidosGanados == 4  ){
+           if( partidosGanados == 1 || partidosGanados == 2 || partidosGanados == 3 || partidosGanados == 4 || partidosGanados == 5 || partidosGanados == 6 || partidosGanados == 7 || partidosGanados == 8 || partidosGanados == 9 || partidosGanados == 10  ){
             modelo.setValueAt(partidosGanados + 3, 1, 7);
            }
         }
             for (int i = 0; i < filas1; i++) {
             int partidosGanados = (int) modelo.getValueAt(2, 5);
-           if( partidosGanados == 1 || partidosGanados == 2 || partidosGanados == 3 || partidosGanados == 3 || partidosGanados == 4  ){
+           if(  partidosGanados == 1 || partidosGanados == 2 || partidosGanados == 3 || partidosGanados == 4 || partidosGanados == 5 || partidosGanados == 6 || partidosGanados == 7 || partidosGanados == 8 || partidosGanados == 9 || partidosGanados == 10  ){
             modelo.setValueAt(partidosGanados + 3, 2, 7);// hago que le sume puntos a la columna de puntos
            }
         }
              for (int i = 0; i < filas1; i++) {
             int partidosGanados = (int) modelo.getValueAt(3, 5);
-           if( partidosGanados == 1 || partidosGanados == 2 || partidosGanados == 3 || partidosGanados == 3 || partidosGanados == 4  ){
+           if( partidosGanados == 1 || partidosGanados == 2 || partidosGanados == 3 || partidosGanados == 4 || partidosGanados == 5 || partidosGanados == 6 || partidosGanados == 7 || partidosGanados == 8 || partidosGanados == 9 || partidosGanados == 10 ){
             modelo.setValueAt(partidosGanados + 3, 3, 7);// hago que le sume puntos a la columna de puntos
            }
         }
               for (int i = 0; i < filas1; i++) {
             int partidosGanados = (int) modelo.getValueAt(4, 5);
-           if( partidosGanados == 1 || partidosGanados == 2 || partidosGanados == 3 || partidosGanados == 3 || partidosGanados == 4  ){
+           if( partidosGanados == 1 || partidosGanados == 2 || partidosGanados == 3 || partidosGanados == 4 || partidosGanados == 5 || partidosGanados == 6 || partidosGanados == 7 || partidosGanados == 8 || partidosGanados == 9 || partidosGanados == 10 ){
             modelo.setValueAt(partidosGanados + 3, 4, 7);// hago que le sume puntos a la columna de puntos
            }
         }
+              //---------------------------------------------------------------------------------------------------------------------------------------
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
     }
 
     /**
