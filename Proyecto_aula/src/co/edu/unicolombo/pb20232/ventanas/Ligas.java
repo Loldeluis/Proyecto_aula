@@ -28,7 +28,7 @@ public class Ligas extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        Femenino = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -45,7 +45,12 @@ public class Ligas extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setText("¿FEMENINO");
+        Femenino.setText("¿FEMENINO");
+        Femenino.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                FemeninoMouseClicked(evt);
+            }
+        });
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/co/edu/unicolombo/pb20232/ventanas/Imagenes/descarga.jpeg"))); // NOI18N
 
@@ -71,7 +76,7 @@ public class Ligas extends javax.swing.JFrame {
                 .addGap(49, 49, 49))
             .addGroup(layout.createSequentialGroup()
                 .addGap(268, 268, 268)
-                .addComponent(jButton2)
+                .addComponent(Femenino)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel4)
                 .addGap(186, 186, 186)
@@ -93,7 +98,7 @@ public class Ligas extends javax.swing.JFrame {
                     .addComponent(jButton3))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2)
+                    .addComponent(Femenino)
                     .addComponent(jButton1)
                     .addComponent(jLabel4))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -117,6 +122,12 @@ public class Ligas extends javax.swing.JFrame {
          GN.setVisible(true);
                   dispose();
     }//GEN-LAST:event_jButton1MouseClicked
+
+    private void FemeninoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FemeninoMouseClicked
+          Femenino GN = new Femenino();
+         GN.setVisible(true);
+                  dispose();
+    }//GEN-LAST:event_FemeninoMouseClicked
 
     /**
      * @param args the command line arguments
@@ -154,8 +165,8 @@ public class Ligas extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Femenino;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
