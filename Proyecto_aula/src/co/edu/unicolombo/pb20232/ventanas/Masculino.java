@@ -497,10 +497,58 @@ private void sumarPartidoJugado() {
             modelo.setValueAt(partidosGanados + 3, 4, 7);// hago que le sume puntos a la columna de puntos
            }
         }
+               for (int i = 0; i < filas1; i++) {
+            int partidosGanados = (int) modelo.getValueAt(5, 5);
+           if( partidosGanados == 1 || partidosGanados == 2 || partidosGanados == 3 || partidosGanados == 4 || partidosGanados == 5 || partidosGanados == 6 || partidosGanados == 7 || partidosGanados == 8 || partidosGanados == 9 || partidosGanados == 10 ){
+            modelo.setValueAt(partidosGanados + 3, 5, 7);// hago que le sume puntos a la columna de puntos
+           }
+        }
+              
+        
+              
               //---------------------------------------------------------------------------------------------------------------------------------------
               
               
+              //Sitema de ganador
               
+              for (int i = 0; i < filas1; i++) {
+            int puntos = (int) modelo.getValueAt(0, 7);
+           if( puntos == 13  ){
+            JOptionPane.showMessageDialog(this, " El equipo 1 ha ganado ");
+           }
+        }
+           for (int i = 0; i < filas1; i++) {
+            int puntos = (int) modelo.getValueAt(1, 7);
+           if( puntos == 13  ){
+           JOptionPane.showMessageDialog(this, " El equipo 2 ha ganado ");
+           }
+        }
+            for (int i = 0; i < filas1; i++) {
+            int puntos = (int) modelo.getValueAt(2, 7);
+           if(  puntos == 13   ){
+          JOptionPane.showMessageDialog(this, " El equipo 3 ha ganado ");
+           }
+        }
+             for (int i = 0; i < filas1; i++) {
+            int puntos = (int) modelo.getValueAt(3, 7);
+           if( puntos == 13 ){
+           JOptionPane.showMessageDialog(this, " El equipo 4 ha ganado ");
+           }
+        }
+              for (int i = 0; i < filas1; i++) {
+            int puntos = (int) modelo.getValueAt(4, 7);
+           if( puntos == 13 ){
+            JOptionPane.showMessageDialog(this, " El equipo numero 5 ha ganado ");
+           }
+        }
+               for (int i = 0; i < filas1; i++) {
+            int puntos = (int) modelo.getValueAt(5, 7);
+           if( puntos == 13 ){
+            JOptionPane.showMessageDialog(this, " El equipo numero 6 ha ganado ");
+           }
+        }
+              
+              //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
               
               
               
